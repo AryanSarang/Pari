@@ -4,7 +4,6 @@ const About = (props) => {
     return (
         <div>
             <div className="justification">
-                <h4 >Joint International Course on Public Policy Management in Parliamentary Democracy (New Delhi + Perth)</h4>
 
                 <h5>JUSTIFICATION OF THE COURSE</h5>
 

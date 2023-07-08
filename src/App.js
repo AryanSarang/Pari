@@ -8,8 +8,10 @@ function App() {
   return(
 <div>
   <Navbar/>
+<UpBatch/>
+
   <About/>
-  <UpBatch/>
+  
   <Footer/>
 </div>
 
