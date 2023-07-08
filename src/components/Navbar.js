@@ -1,9 +1,18 @@
 import React from "react"
 const Navbar = () => {
+  window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 61 || document.documentElement.scrollTop > 61) {
+    document.getElementById("navbar").style.padding = "1% 10%";
+  } else {
+    document.getElementById("navbar").style.padding = "2% 10%";
+  }
+}
   return (
     
-<nav class="navbar navbar-expand-lg navbar-light bg-light " >
-  <a class="navbar-brand" href="#">Pari</a>
+<nav id="navbar" class="navbar navbar-expand-sm  sticky-top navbar-light bg-light " >
+  <a id="logo" class="navbar-brand" href="#">Pari</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
